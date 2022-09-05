@@ -8,13 +8,13 @@ export default function Nav() {
         Home
       </a>
       <a className="menu-item" href="/salads">
-        Salads
+        About
       </a>
       <a className="menu-item" href="/pizzas">
-        Pizzas
+        Projects
       </a>
       <a className="menu-item" href="/desserts">
-        Desserts
+        Resume
       </a>
     </Menu>
   );

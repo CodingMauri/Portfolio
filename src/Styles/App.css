@@ -1,5 +1,38 @@
 *{
   box-sizing: border-box;
-  width:100%;
+  
   
 }
+:root{
+  --background-color: #DAB88B;
+  --carousel-color:#F3E9DD;
+  --color-2:#FDF6EC;
+  --color-3:#8FC1D4;
+}
+
+/******************************************
+ HERO 
+ ******************************************/
+
+ .hero-cntnr{
+   display: flex;
+   background-color: var(--background-color);
+   justify-content: center;
+   
+   height:100vh;
+ }
+ #hero-title-cntnr{
+   justify-content: center;
+   align-items: center;
+   margin:45vh;
+ }
+ .project-title{
+   display:flex;
+   justify-content:center;
+ }
+.project-container{
+  margin:0;
+  padding:0;
+  background-color: var(--carousel-color);
+}
+ 
