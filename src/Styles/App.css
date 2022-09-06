@@ -9,7 +9,9 @@
   --color-2:#FDF6EC;
   --color-3:#8FC1D4;
 }
-
+body{
+  background-color: var(--background-color);
+}
 /******************************************
  HERO 
  ******************************************/
@@ -26,13 +28,46 @@
    align-items: center;
    margin:45vh;
  }
- .project-title{
-   display:flex;
-   justify-content:center;
- }
-.project-container{
-  margin:0;
-  padding:0;
-  background-color: var(--carousel-color);
-}
  
+ /******************************************
+ PROJECT-CAROUSEL
+ ******************************************/
+ .project-title{
+   font-size: 2rem;
+   font-weight:500;
+   
+  }
+  .carousel-title{
+    display:flex;
+    justify-content: center;
+    font-size:4rem;
+  }
+  .project-title{
+    display:flex;
+    justify-content:center;
+  }
+ .project-container{
+  
+  max-width:1425px;
+  width: 200vw;
+  margin:2rem auto;
+  background-color: white;
+  border-radius: 25px;
+  padding:25px 40px;
+  line-height:0.9;
+  position: relative;
+  box-shadow: 2px 2px 3px 3px #5e4f401d;
+  height:auto;
+ }
+ .project-img-cntnr{
+  
+  display:flex;
+  height:20vh;
+  width:100%;
+  border-radius: 40px;
+  margin:2rem auto;
+  outline:blue;
+ }
+ .project-img{
+
+ }
