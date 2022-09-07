@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Card, Container } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 import projects from "../data/projects.json";
 
 export default function Projects() {
@@ -19,11 +19,10 @@ export default function Projects() {
         {projects.map((item, index) => {
           return (
             <Container>
-              <div className ="project-title">
-                <h3>{item.name}</h3>
-              </div>
+              
               <div className="project-img-cntnr">
-                <img classname = "project-img"src = {item.img} alt = "product-pic"></img>
+
+                 <img key = {index} className = "project-img"src = {item.img} alt = "product-pic"></img>
               </div>
 
 

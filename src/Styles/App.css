@@ -26,48 +26,73 @@ body{
  #hero-title-cntnr{
    justify-content: center;
    align-items: center;
-   margin:45vh;
+   margin:45vh 45vh 45vh 20vh;;
  }
- 
+ .link-container a{
+   display :inline-flex;
+   justify-content: space-around;
+  
+   height:8vh;
+   width:8vw;
+   padding:10px;
+   margin:auto;
+   cursor:hover;
+ }
+ .github {
+   padding-right:10px;
+   margin:0 auto;
+   padding-left:40px;
+ }
+ .linked-in{
+   padding-left:70px;
+ }
+ /******************************************
+ ABOUT
+ ******************************************/
+.about-cntnr h2{
+  display:flex;
+  justify-content: center;
+}
+.about-me p{
+  display:flex;
+  line-height: 2rem;
+}
  /******************************************
  PROJECT-CAROUSEL
  ******************************************/
- .project-title{
-   font-size: 2rem;
-   font-weight:500;
-   
-  }
+ 
   .carousel-title{
     display:flex;
     justify-content: center;
-    font-size:4rem;
+    font-size:2rem;
   }
   .project-title{
     display:flex;
     justify-content:center;
   }
  .project-container{
-  
-  max-width:1425px;
-  width: 200vw;
-  margin:2rem auto;
-  background-color: white;
-  border-radius: 25px;
-  padding:25px 40px;
-  line-height:0.9;
-  position: relative;
-  box-shadow: 2px 2px 3px 3px #5e4f401d;
+  background-color: var(--background-color);
+  border-radius:10px;
+  padding:2rem;
+  margin:20px;
+  align-items: center;
   height:auto;
+  
  }
+ 
  .project-img-cntnr{
   
   display:flex;
   height:20vh;
   width:100%;
-  border-radius: 40px;
-  margin:2rem auto;
+
+  
   outline:blue;
  }
  .project-img{
-
+  margin:0 auto;
+  border-radius:100%;
+  cursor:pointer;
+  width:40vw;
  }
+ 
