@@ -17,7 +17,7 @@ export default function Hero() {
             <Typewriter 
                 onInit={(typewriter) =>{
                   typewriter.typeString("Welcome to my Portfolio!")
-                  
+                n
                   .start()
                 }}
               />
