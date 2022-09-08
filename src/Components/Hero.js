@@ -1,11 +1,11 @@
 import React from "react";
 import "../Styles/App.css";
 import Typewriter from "typewriter-effect";
-import styled from "styled-components";
+
 import {motion} from 'framer-motion'
 export default function Hero() {
   const fadeLeft = {
-    hidden: {opacity:0, x: -200},
+    hidden: {opacity:0, x: -100},
     visible:{opacity: 1, x:0}
 
   }
@@ -14,10 +14,13 @@ export default function Hero() {
       <div className="hero-cntnr">
         <div id="hero-title-cntnr">
           <motion.h1
-          variants = {fadeLeft} 
-          initial = 'hidden'
-          animate = 'visible'
-          transition ={{duration:2}}
+           variants = {fadeLeft}
+           initial = "hidden"
+           whileInView = "visible"
+           viewport = {{once:false, amount:1}}
+           
+           transition = {{duration:2}}
+       
            className="hero-title">
             Hi, I'm Mauricio, <br />
             <Typewriter

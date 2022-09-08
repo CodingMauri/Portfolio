@@ -1,9 +1,25 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 export default function About() {
+    const fadeDown = {
+        
+        hidden: {opacity:0, y:-100},
+        visible:{opacity: 1, y:0},
+        
+    
+      }
+      
   return (
-    <div className ="about-cntnr">
+    <motion.div 
+    variants={fadeDown}
+    initial = 'hidden'
+    whileInView = 'visible'
+    transition = {{duration:2}}
+    viewport =  {{once:false, amount: 1}}
+    className ="about-cntnr"
+    >
         <h2>About</h2>
+        
         <section className='about-me'>
             <p>Hi my name is Mauricio Alvarenga and I am a software engineer stationed in the bay area.
                 My desired coding language is JavaScript since thats what I'm most comfortable with and I have used 
@@ -16,6 +32,6 @@ export default function About() {
 
 
 
-    </div>
+    </motion.div>
   )
 }

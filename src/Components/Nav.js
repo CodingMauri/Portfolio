@@ -1,9 +1,13 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import "../Styles/Sidebar.css"
+
 export default function Nav() {
   return (
-    <Menu>
+    <Menu
+    
+    
+    >
       <a className="menu-item" href="/">
         Home
       </a>
