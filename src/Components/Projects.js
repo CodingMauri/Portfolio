@@ -22,7 +22,7 @@ const Projects = () => {
   
 
   return (
-    <Container>
+    <Container >
       {projectData.map((projects, index) => {
         return (
           <ProjectCard
