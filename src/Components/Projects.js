@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Row } from "react-bootstrap";
+import { Container, } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projectData = [

@@ -91,22 +91,22 @@ body {
 
 .skill-logos {
   display: flex;
-  max-height: 20vh;
-  overflow:hidden;
-  max-width:200px;
-  width: auto;
+  height: 20vh;
+  width: 100%;
   justify-content: center;
   outline: blue;
 }
 .skill-logos img {
-  margin:0 auto;
-  width: 100%;
+  margin: 0 auto;
   
+  cursor: pointer;
+  width: 10vw;
+  height: 10vw;
 }
 /******************************************
  PROJECT-PAGE
  ******************************************/
 
- 
-
- 
+.project-container{
+  justify-content:center;
+}
