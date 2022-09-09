@@ -17,6 +17,7 @@ export default function About() {
     // transition={{ duration: 2 }}
     // viewport={{ once: false, amount: 1 }}
     // >
+    <div>
       <motion.div
         variants={fadeDown}
         initial="hidden"
@@ -42,9 +43,10 @@ export default function About() {
             shared the same passion was an awesome experience.
           </p>
         </section>
-        
       </motion.div>
-    
+      <Skills />
+    </div>
+
     // </motion.div>
   );
 }

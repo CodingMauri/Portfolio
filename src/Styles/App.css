@@ -1,11 +1,15 @@
-* {
+*{
   box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
 :root {
   --background-color: #dab88b;
   --carousel-color: #f3e9dd;
   --color-2: #fdf6ec;
   --color-3: #8fc1d4;
+  overflow-x: hidden;
+  
 }
 body {
   background-color: var(--background-color);
@@ -14,7 +18,7 @@ body {
  HERO 
  ******************************************/
 .hero-img-container{
-  position: relative;
+
   margin:0 auto;
 }
 .hero-img-container img{
@@ -29,7 +33,7 @@ body {
    display: flex;
    flex-wrap: wrap-reverse;
    background-color: var(--background-color);
-   
+   position: relative;
    
    padding-left:clamp(1rem,15vw,10rem);
    align-items: center;
@@ -40,20 +44,21 @@ body {
     .hero-cntnr{
       display:flex;
       justify-content: center;
+    
       padding:0;
       
     }
     
     .hero-img-container{
-      max-width:600px;
+      max-width:400px;
       
     
       
       height:1rem;
     }
     .hero-img-container img{
-      width:35rem;
-      
+      width:400px;
+      height:auto;
       
     }
   }
@@ -108,8 +113,8 @@ body {
 /******************************************
  ABOUT
  ******************************************/
- 
-.about-cntnr h2 {
+  
+ .about-cntnr h2 {
   display: flex;
   
   justify-content: center;
@@ -174,32 +179,40 @@ body {
 
 .skills-page {
   
-  position: relative;
+
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color);
-  
+  background-color: var(--carousel-color);
+  max-width:1700px;
+  width:100vw;
   padding: 2rem;
-  margin: 20px;
-  
-  
+  margin: 2rem auto;
+  height:22vh;
+  border-radius: 10px;
   padding:20px;
 }
+.skill-logos{
+  max-width:600px;
+  width:100%;
+  align-items: left;
+  height:auto;
+  
+  overflow: hidden;
+  min-height:275px !important
+}
+.skill-logos img{
+ margin: 0 auto;
+ height:10em;
+}
+@media screen and (max-width:450px) {
+  .skill-logos{
+    height:5em;
+    width:5em;
+  };
+  
+}
 
-.skill-logos {
-  display: flex;
-  height: 20rem;
-  width: 25vw;
-  
-  outline: blue;
-}
-.skill-logos img {
-  margin: 0 auto;
-  
-  cursor: pointer;
-  width: auto;
-  height: 50%;
-}
+
 /******************************************
  PROJECT-PAGE
  ******************************************/
@@ -213,6 +226,9 @@ body {
   justify-content: center;
   /* background-color: var(--clr-secondary); */
   grid-gap: clamp(1rem, 3vw, 3rem);
+  height:100vh;
+  background-color: aqua;
+  align-items: center;
   
 }
 .image-container{
@@ -235,6 +251,9 @@ body {
   padding: 30px;
   background-color: var(--carousel-color);
   width: 100%;
+  height: 50vh;
+  background-color: azure;
+  
 }
 @media (min-width: 400px) {
   .card-img {
@@ -246,4 +265,16 @@ body {
     min-height: 150px;
     margin: 16px 0;
   }
+}
+
+
+
+.button-cntnr{
+  display: inline-flex;
+  padding-top:8rem;
+  
+
+}
+.github-btn{
+  padding-right:40px;
 }

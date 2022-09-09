@@ -58,12 +58,12 @@ export default function Skills() {
           dots:false,
         },
       },
-      
+    
     ],
   };
   return (
     <Container className="skills-page">
-      <h1 className="skill-title">Skills</h1>
+      {/* <h1 className="skill-title">Skills</h1> */}
       <Slider {...settings}>
         {skillData.map((skill) =>{
           return(

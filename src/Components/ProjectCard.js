@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Col } from "react-bootstrap";
+import { Container, Card, Col, Button } from "react-bootstrap";
 import "../Styles/App.css";
 export default function ProjectCard({
   name,
@@ -17,6 +17,14 @@ export default function ProjectCard({
         <Card.Title>
           <h4>{name}</h4>
         </Card.Title>
+        <Card.Body className = "button-cntnr">
+          <Button id = "github-btn">
+            Github
+          </Button>
+          <Button id = "live-btn">
+            Live
+          </Button>
+        </Card.Body>
       
       </Card>
     </Container>
