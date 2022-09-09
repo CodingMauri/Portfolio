@@ -13,39 +13,88 @@ body {
 /******************************************
  HERO 
  ******************************************/
-
-.hero-cntnr {
-  display: flex;
-  background-color: var(--background-color);
-  justify-content: center;
-
-  height: 100vh;
+.hero-img-container{
+  position: relative;
+  margin:0 auto;
 }
+.hero-img-container img{
+  top:0;
+  bottom:0;
+  width:100%;
+  height:auto;
+  
+  
+}
+ .hero-cntnr {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   background-color: var(--background-color);
+   
+   
+   padding-left:clamp(1rem,15vw,10rem);
+   align-items: center;
+   height: 100vh;
+   
+  }
+  @media screen and (max-width: 796px)  {
+    .hero-cntnr{
+      display:flex;
+      justify-content: center;
+      padding:0;
+      
+    }
+    
+    .hero-img-container{
+      max-width:600px;
+      
+    
+      
+      height:1rem;
+    }
+    .hero-img-container img{
+      width:35rem;
+      
+      
+    }
+  }
+  
+ /* @media screen and (max-width:800) {
+  .hero-cntnr{
+    flex-direction: row-reverse;
+  }
+  
+ } */
+  
 .hero-title {
   font-size: clamp(2rem, 6vw, 4rem);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  color:black;
 }
 #hero-title-cntnr {
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content:flex-start;
+
+  left:0;
+  bottom:0;
+
   
 }
 .link-container a {
   display: inline-flex;
   justify-content: space-around;
   
-  height: 8vh;
-  width: 8vw;
+  height: 6.5vh;
+  width: 6.5vw;
   padding: 10px;
   margin: auto;
   cursor: hover;
-  @media screen and (max-width:768px) {
+  /* @media screen and (max-width:768px) {
     height:2vh;
     width: 4vw;
     
-  }
+  } */
 }
 
 .github {
@@ -59,12 +108,57 @@ body {
 /******************************************
  ABOUT
  ******************************************/
+ 
 .about-cntnr h2 {
   display: flex;
+  
   justify-content: center;
 }
-.about-me p {
+.abt-image-container img{
   display: flex;
+  flex-wrap: nowrap;
+  
+  height:100%;
+}
+.abt-image-container  {
+  display:flex;
+  flex-direction: column;
+  width:50%;
+  height:40%;
+  
+  
+  
+}
+@media screen and (max-width:800px) {
+  .about-me{
+    flex-direction: column;
+  }
+  .abt-image-container img{
+    
+    width:100%;
+    height:100%;
+    
+    
+  }
+  .abt-image-container{
+    display:flex;
+    width:20rem;
+    height:20rem;
+    
+  }
+}
+
+.about-me{
+  display: flex;
+  
+  width:100vw;
+  max-height:100vh;
+  padding:clamp(1rem,10vw,4rem);
+  
+}
+.about-me p {
+  
+  font-size:clamp(10px,10vw,20px);
   line-height: 2rem;
 }
 /******************************************
@@ -73,40 +167,83 @@ body {
 
 .skill-title {
   display: flex;
+  
   justify-content: center;
   font-size: 2rem;
 }
-.project-title {
-  display: flex;
-  justify-content: center;
-}
+
 .skills-page {
+  
+  position: relative;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-color);
   
   padding: 2rem;
   margin: 20px;
-  align-items: center;
-  height: auto;
+  
+  
+  padding:20px;
 }
 
 .skill-logos {
   display: flex;
-  height: 20vh;
-  width: 100%;
-  justify-content: center;
+  height: 20rem;
+  width: 25vw;
+  
   outline: blue;
 }
 .skill-logos img {
   margin: 0 auto;
   
   cursor: pointer;
-  width: 10vw;
-  height: 10vw;
+  width: auto;
+  height: 50%;
 }
 /******************************************
  PROJECT-PAGE
  ******************************************/
+ 
+.card-container{
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1600px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,20rem);
+  justify-content: center;
+  /* background-color: var(--clr-secondary); */
+  grid-gap: clamp(1rem, 3vw, 3rem);
+  
+}
+.image-container{
+  max-width: 100%;
+  min-height: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img{
+  height:auto;
+  max-width:100%;
+  width:auto;
+  margin:1rem auto;
+}
 
 .project-container{
-  justify-content:center;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px 3px #5e4f401d;
+  padding: 30px;
+  background-color: var(--carousel-color);
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .card-img {
+    height: 125px;
+    min-height: 125px;
+    
+  }
+  .image-container{
+    min-height: 150px;
+    margin: 16px 0;
+  }
 }
