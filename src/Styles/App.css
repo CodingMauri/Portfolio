@@ -217,7 +217,8 @@ body {
  PROJECT-PAGE
  ******************************************/
  
-.card-container{
+.card-container {
+  
   margin: 0 auto;
   width: 90vw;
   max-width: 1600px;
@@ -225,25 +226,20 @@ body {
   grid-template-columns: repeat(auto-fit,20rem);
   justify-content: center;
   /* background-color: var(--clr-secondary); */
-  grid-gap: clamp(1rem, 3vw, 3rem);
-  height:100vh;
-  background-color: aqua;
+  grid-gap: clamp(1rem, 15vw, 15rem);
+  min-height:100vh;
+  height:auto;
+  
   align-items: center;
   
 }
-.image-container{
-  max-width: 100%;
-  min-height: 138px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card-container img{
+  width:100%;
+  height:25%
+
 }
-.card-img{
-  height:auto;
-  max-width:100%;
-  width:auto;
-  margin:1rem auto;
-}
+
+
 
 .project-container{
   border-radius: 25px;
@@ -251,7 +247,7 @@ body {
   padding: 30px;
   background-color: var(--carousel-color);
   width: 100%;
-  height: 50vh;
+  height:auto;
   background-color: azure;
   
 }
@@ -266,15 +262,78 @@ body {
     margin: 16px 0;
   }
 }
+.project-title{
+  margin:10px;
+  padding:10px;
+}
+.project-description{
+  padding:10px;
+  margin:10px;
+}
 
-
-
+.project-card{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width:1600px;
+  width:auto;
+  
+}
 .button-cntnr{
   display: inline-flex;
-  padding-top:8rem;
+  margin-top:5em;
+  
+  
+  
+
+  
+
   
 
 }
-.github-btn{
-  padding-right:40px;
+
+button.project-btns{
+
+  font-size:1rem;
+  
+  border-width: 1.5px;
+  border-color: black;
+  border-radius:5rem;
+  padding:.5rem;
+  width:100%;
+  
+
+}
+#live{
+  background-color:var(--color-3);
+}
+#github{
+  background-color: white;
+}
+/******************************************
+ CONTACT
+ ******************************************/
+
+ .contact-container form {
+   display:flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   width:46%;
+   height:100vh;
+   align-content: center;
+   
+   padding-top:30px;
+   margin:1rem;
+  
+ }
+
+ .user{
+   line-height:5rem;
+ }
+ /******************************************
+ GOOGLE MAPS
+ ******************************************/
+.map-container{
+  width:50%;
+  height:100%;
 }

@@ -10,18 +10,21 @@ export default function ProjectCard({
 }) {
   return (
     <Container className="project-container">
-      <Card className="project-card">
+      <Card variant = "top" className="project-card">
         <Card.Body className="image-container">
-          <Card.Img className = "card-img" src={img} alt="project-pic" />
+          <Card.Img className = "card-img" src={img} alt="project-pic"  />
         </Card.Body>
-        <Card.Title>
+        <Card.Title className = "project-title">
           <h4>{name}</h4>
         </Card.Title>
+          <Card.Body className = "project-description" >
+        
+          </Card.Body>
         <Card.Body className = "button-cntnr">
-          <Button id = "github-btn">
+          <Button id = "github" className = "project-btns" variant = "contained">
             Github
           </Button>
-          <Button id = "live-btn">
+          <Button id = "live" className = "project-btns" variant = "contained">
             Live
           </Button>
         </Card.Body>

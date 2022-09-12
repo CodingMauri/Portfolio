@@ -65,10 +65,10 @@ export default function Skills() {
     <Container className="skills-page">
       {/* <h1 className="skill-title">Skills</h1> */}
       <Slider {...settings}>
-        {skillData.map((skill) =>{
+        {skillData.map((skill,index) =>{
           return(
             <div className = "skill-logos">
-              <img  src = {skill.img}></img>
+              <img  key = {index} src = {skill.img} alt = "pic"></img>
             </div>
 
           )

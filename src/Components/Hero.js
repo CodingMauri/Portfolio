@@ -3,16 +3,15 @@ import "../Styles/App.css";
 import Typewriter from "typewriter-effect";
 
 import { motion } from "framer-motion";
-import { Container } from "react-bootstrap";
-import { slide } from "react-burger-menu";
+
 export default function Hero() {
   const fadeLeft = {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: 100 },
     visible: { opacity: 1, x: 0 },
   };
 
   const slideUp = {
-    hidden: { opacity: 0, y: -100 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
     
   };
