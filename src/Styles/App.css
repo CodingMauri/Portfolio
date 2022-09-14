@@ -317,6 +317,11 @@ button.project-btns{
  .contact-container form {
    width:100%;
    padding:10rem;
+   display:flex;
+   gap: 5rem;
+   margin-top:7rem;
+   justify-content: center;
+   position:relative;
 
   
  }
