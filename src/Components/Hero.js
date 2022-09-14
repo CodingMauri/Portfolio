@@ -74,6 +74,7 @@ export default function Hero() {
               viewport={{ once: false, amount: 1 }}
               transition={{ duration: 2 }}
               src={require("../assets/chill-astro-no-bg.png")}
+              alt = "hero-img"
             />
           </div>
         
