@@ -33,7 +33,7 @@ export default function Hero() {
               options={{
                 strings: [
                   "Software Engineer",
-                  "Full-Stack Developer",
+                  "Front-End Developer",
                   "Web Developer",
                 ],
                 loop: true,
