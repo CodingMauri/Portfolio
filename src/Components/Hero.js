@@ -33,7 +33,7 @@ export default function Hero() {
               options={{
                 strings: [
                   "Software Engineer",
-                  "Full-Stack Developer",
+                  "Front-End Developer",
                   "Web Developer",
                 ],
                 loop: true,
@@ -74,6 +74,7 @@ export default function Hero() {
               // viewport={{ once: false, amount: 1 }}
               // transition={{ duration: 2 }}
               src={require("../assets/chill-astro-no-bg.png")}
+              alt = "hero-img"
             />
           </div>
         

@@ -1,12 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import {Container} from "react-bootstrap"
+import { Container } from "react-bootstrap";
 
-import ContactMap from "./ContactMap";
+
 
 export const Contact = () => {
-
-  
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,18 +28,18 @@ export const Contact = () => {
   };
 
   return (
-    <Container className = "contact-container">
-
-    <form  className = "form" ref={form} onSubmit={sendEmail}>
-      <label className = "user">Your Name</label>
-      <input className = "user"type="text" name="user_name" />
-      <label className = "user">Email</label>
-      <input className = "user" type="email" name="user_email" />
-      <label className = "user">Message</label>
-      <textarea className = "user" name="message" />
-      <input className = "user" type="submit" value="Send" />
-    </form>
-  
+    <Container className="contact-container">
+      <form className="form" ref={form} onSubmit={sendEmail}>
+        <label className="label">Your Name</label>
+        <input className="input" type="text" name="user_name" />
+        <label className="label">Email</label>
+        <input className="input" type="email" name="user_email" />
+        <label className="label">Message</label>
+        <textarea className="text-area" name="message" />
+        
+          <input className="send-button" type="submit" value="Send" />
+        
+      </form>
     </Container>
   );
 };

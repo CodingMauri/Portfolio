@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Col } from "react-bootstrap";
+
 import Skills from "./Skills";
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
         <h2>About</h2>
         <section className="about-me">
           <div className="abt-image-container">
-            <img src={require("../assets/coffee-astro-no-bg.png")}></img>
+            <img src={require("../assets/coffee-astro-no-bg.png")} alt = "about-img"></img>
           </div>
           <p>
             Hi my name is Mauricio Alvarenga and I am a software engineer
