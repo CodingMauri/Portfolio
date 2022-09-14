@@ -21,11 +21,11 @@ export default function Hero() {
       <div className="hero-cntnr">
         <div id="hero-title-cntnr">
           <motion.h1
-            variants={fadeLeft}
-            initial="hidden"
-            whileInView= "visible"
-            viewport={{ once: false, amount: 1 }}
-            transition={{ duration: 2 }}
+            // variants={fadeLeft}
+            // initial="hidden"
+            // whileInView= "visible"
+            // viewport={{ once: false, amount: 1 }}
+            // transition={{ duration: 2 }}
             className="hero-title"
           >
             Hi, I'm Mauricio, <br />
@@ -42,10 +42,10 @@ export default function Hero() {
             />
           </motion.h1>
           <motion.div
-            variants={fadeLeft}
-            initial="hidden"
-            whileInView="visible"
-            transition={{ duration: 2 }}
+            // variants={fadeLeft}
+            // initial="hidden"
+            // whileInView="visible"
+            // transition={{ duration: 2 }}
             className="link-container"
           >
             <a href="https://github.com/CodingMauri">
@@ -67,12 +67,12 @@ export default function Hero() {
         
           <div className="hero-img-container">
             <motion.img
-              variants={slideUp}
-              initial="hidden"
-              whileInView="visible"
+              // variants={slideUp}
+              // initial="hidden"
+              // whileInView="visible"
               
-              viewport={{ once: false, amount: 1 }}
-              transition={{ duration: 2 }}
+              // viewport={{ once: false, amount: 1 }}
+              // transition={{ duration: 2 }}
               src={require("../assets/chill-astro-no-bg.png")}
             />
           </div>

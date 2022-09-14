@@ -4,9 +4,10 @@ import "../Styles/Sidebar.css"
 
 export default function Nav() {
   return (
+
+
+
     <Menu
-    
-    
     >
       <a className="menu-item" href="/">
         Home

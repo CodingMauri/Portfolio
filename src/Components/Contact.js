@@ -41,7 +41,7 @@ export const Contact = () => {
       <textarea className = "user" name="message" />
       <input className = "user" type="submit" value="Send" />
     </form>
-    
+  
     </Container>
   );
 };

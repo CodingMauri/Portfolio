@@ -19,11 +19,11 @@ export default function About() {
     // >
     <div>
       <motion.div
-        variants={fadeDown}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 2 }}
-        viewport={{ once: false, amount: 1 }}
+        // variants={fadeDown}
+        // initial="hidden"
+        // whileInView="visible"
+        // transition={{ duration: 2 }}
+        // viewport={{ once: false, amount: 1 }}
         className="about-cntnr"
       >
         <h2>About</h2>
