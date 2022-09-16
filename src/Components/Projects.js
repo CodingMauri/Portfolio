@@ -1,9 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import styled from "styled-components";
+
 import ProjectCard from "./ProjectCard";
-const Projects = () => {
+import { motion } from "framer-motion";
+const Projects = ({fadeLeft}) => {
   const projectData = [
     {
       name: "RetroDash",
@@ -24,7 +25,10 @@ const Projects = () => {
   ];
 
   return (
-    <div>
+    <motion.div
+    variants = {fadeLeft}
+    initial = "hidden"
+    whileInView = "visible">
       <div className="section-title">
         <h2>Projects</h2>
       </div>
@@ -33,7 +37,7 @@ const Projects = () => {
           return <ProjectCard key={index} {...projects} />;
         })}
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

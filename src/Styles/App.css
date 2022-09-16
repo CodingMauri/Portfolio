@@ -37,7 +37,8 @@ body {
    
    padding-left:clamp(1rem,15vw,10rem);
    align-items: center;
-   height: 100vh;
+   height: 110vh;
+   
    
   }
   @media screen and (max-width: 796px)  {
@@ -102,11 +103,12 @@ body {
   } */
 }
 
-.github {
+.github{
   padding-right: 10px;
   margin: 0 auto;
   padding-left: 40px;
 }
+
 .linked-in {
   padding-left: 70px;
 }
@@ -235,7 +237,7 @@ body {
   justify-content: center;
   /* background-color: var(--clr-secondary); */
   grid-gap: clamp(1rem, 15vw, 15rem);
-  min-height:100vh;
+  min-height:110vh;
   height:auto;
   
   align-items: center;
