@@ -36,3 +36,18 @@
       cursor:pointer;
   }
 
+.contact-heading{
+  display:flex;
+  flex-direction: column;
+  
+  padding:25px;
+  align-items: center;
+}
+
+.contact-heading h1{
+  font-size:5rem;
+}
+.contact-heading h3{
+  font-size:2rem;
+}
+

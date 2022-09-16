@@ -21,10 +21,19 @@ import styled from "styled-components"
       width:2rem;
       height:2rem;
     }
+    @media only screen and (max-width:500px){
+      svg{
+        width:1rem;
+        height:1rem;
+      }
+    }
+    .text p{
+      font-size:20px;
+    }
   `;
 export default function ContactInfo({
   icon = <MdPlace />,
-  text = "something"
+  text = "Hayward, CA"
 }){
   return (
     <ItemStyles>

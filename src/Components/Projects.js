@@ -1,5 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+
+import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projectData = [
@@ -22,12 +24,16 @@ const Projects = () => {
   ];
 
   return (
-    <Container className="card-container">
-      
-      {projectData.map((projects, index) => {
-        return <ProjectCard key={index} {...projects} />;
-      })}
-    </Container>
+    <div>
+      <div className="section-title">
+        <h2>Projects</h2>
+      </div>
+      <Container className="card-container">
+        {projectData.map((projects, index) => {
+          return <ProjectCard key={index} {...projects} />;
+        })}
+      </Container>
+    </div>
   );
 };
 

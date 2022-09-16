@@ -5,10 +5,10 @@ import { MdEmail, MdLocalPhone } from "react-icons/md";
 import { ContactForm } from "./ContactForm";
 export default function ContactSection() {
     const ContactSection = styled.div`
-        padding:10rem;
+        padding:12rem ;
         .contactSection__wrapper{
             display:flex;
-            gap:5rem;
+            gap:4rem;
             margin-top:7rem;
             justify-content:space-between;
             position:relative;
@@ -34,6 +34,7 @@ export default function ContactSection() {
             
         }
         @media only screen and (max-width:768px){
+            padding:3rem;
             .contactSection__wrapper{
                 flex-direction:column;
             }
@@ -52,10 +53,12 @@ export default function ContactSection() {
             }
         }
     `;
+    const SubHeading = styled.div`
+    `;
   return (
     <ContactSection>
 
-      <div className="container">
+      <div className="contact-heading">
         <h1>Contact</h1>
         <h3>Lets Talk!</h3>
       </div>
