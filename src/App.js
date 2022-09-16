@@ -1,14 +1,45 @@
 import "./Styles/App.css";
-import { Route, Routes } from "react-router";
+import { Route, Routes, useLocation } from "react-router";
 import Home from "./Components/Home";
-import Nav from "./Components/Nav";
+
+import Projects from "./Components/Projects";
+import ContactSection from "./Components/ContactSection";
+import NavMenu from "./Components/NavMenu";
+import { AnimatePresence } from "framer-motion";
+
 function App() {
+  const fadeLeft = {
+    hidden:{
+      opacity:0,
+      x:'-100'
+    },
+    visible:{
+      opacity:1,
+      x:0,
+      transition:{
+        duration:2,
+      }
+    }
+    
+  }
   return (
     <div className="App">
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
+      <NavMenu />
+      
+        <Routes>
+          <Route className="menu-item" path="/" element={<Home fadeLeft = {fadeLeft} />}></Route>
+          <Route
+            
+            path="/projects"
+            element={<Projects />}
+          ></Route>
+          <Route
+            
+            path="/contact"
+            element={<ContactSection fadeLeft = {fadeLeft} />}
+          ></Route>
+        </Routes>
+    
     </div>
   );
 }

@@ -4,28 +4,33 @@ import Typewriter from "typewriter-effect";
 
 import { motion } from "framer-motion";
 
-export default function Hero() {
-  const fadeLeft = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0 },
-  };
+export default function Hero({fadeLeft}) {
+  
 
-  const slideUp = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0 },
-    
-  };
+  const fadeDown ={
+    hidden:{
+      opacity:0,
+      y:'-100',
+    },
+    visible:{
+      opacity:1,
+      y:0,
+
+      transition:{
+        duration:2,
+      }
+    },
+  }
+  
 
   return (
     <div>
       <div className="hero-cntnr">
         <div id="hero-title-cntnr">
           <motion.h1
-            // variants={fadeLeft}
-            // initial="hidden"
-            // whileInView= "visible"
-            // viewport={{ once: false, amount: 1 }}
-            // transition={{ duration: 2 }}
+          variants = {fadeLeft}
+            initial = "hidden"
+            whileInView = "visible"
             className="hero-title"
           >
             Hi, I'm Mauricio, <br />
@@ -42,41 +47,47 @@ export default function Hero() {
             />
           </motion.h1>
           <motion.div
-            // variants={fadeLeft}
-            // initial="hidden"
-            // whileInView="visible"
-            // transition={{ duration: 2 }}
+            variants = {fadeLeft}
+            initial = "hidden"
+            whileInView = "visible"
             className="link-container"
           >
             <a href="https://github.com/CodingMauri">
-              <img
+              <motion.img
+             whileHover={{ scale: 1.2 }}
+             onHoverStart={e => {}}
+             onHoverEnd={e => {}}
+              
                 className="github"
                 src={require("../assets/github-no-bg.png")}
                 alt="github"
-              ></img>
+              ></motion.img>
             </a>
             <a href="https://www.linkedin.com/in/mauricio-alvarenga-198811236/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BIF8BeGDvQU%2B7miHB2RMI%2Bg%3D%3D">
-              <img
+              <motion.img
+               whileHover={{ scale: 1.2 }}
+               onHoverStart={e => {}}
+               onHoverEnd={e => {}}
                 className="linked-in"
                 src={require("../assets/linked-in.jpeg")}
                 alt="linked-in"
-              ></img>{" "}
+              ></motion.img>{" "}
             </a>
           </motion.div>
         </div>
         
-          <div className="hero-img-container">
-            <motion.img
-              // variants={slideUp}
-              // initial="hidden"
-              // whileInView="visible"
-              
-              // viewport={{ once: false, amount: 1 }}
-              // transition={{ duration: 2 }}
+          <motion.div
+          variants = {fadeDown}
+          initial = "hidden"
+         whileInView = "visible"
+       
+           className="hero-img-container">
+            <img
+             
               src={require("../assets/chill-astro-no-bg.png")}
               alt = "hero-img"
             />
-          </div>
+          </motion.div>
         
       </div>
       

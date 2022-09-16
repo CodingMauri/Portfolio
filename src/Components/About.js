@@ -1,29 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import Skills from "./Skills";
 
 export default function About() {
-  const fadeDown = {
-    hidden: { opacity: 0, y: -100 },
-    visible: { opacity: 1, y: 0 },
-  };
+
+  const [isInView,setIsInView] = useState(false)
+  const fadeLeft = {
+    hidden:{
+      opacity:0,
+      x:'-100'
+    },
+    visible:{
+      opacity:1,
+      x:0,
+      transition:{
+        duration:2,
+      }
+    }
+    
+  }
 
   return (
-    // <motion.div
-    // variants={fadeDown}
-    // initial="hidden"
-    // whileInView="visible"
-    // transition={{ duration: 2 }}
-    // viewport={{ once: false, amount: 1 }}
-    // >
-    <div>
+   
+    <motion.div
+    
+      whileInView= {() =>{
+        setIsInView(true)
+        return {}
+      }}
+    >
       <motion.div
-        // variants={fadeDown}
-        // initial="hidden"
-        // whileInView="visible"
-        // transition={{ duration: 2 }}
-        // viewport={{ once: false, amount: 1 }}
+        variants = {fadeLeft}
+        initial = "hidden"
+        whileInView= "visible"
         className="about-cntnr"
       >
         <h2>About</h2>
@@ -44,9 +53,9 @@ export default function About() {
           </p>
         </section>
       </motion.div>
-      <Skills />
-    </div>
+      
+    </motion.div>
 
-    // </motion.div>
+  
   );
 }
