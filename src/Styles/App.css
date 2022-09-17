@@ -99,7 +99,7 @@ body {
   
   height: 6.5vh;
   width: 6.5vw;
-  padding: 10px;
+  padding: 15px;
   margin: auto;
   cursor: hover;
   /* @media screen and (max-width:768px) {
@@ -109,15 +109,9 @@ body {
   } */
 }
 
-.github{
-  padding-right: 10px;
-  margin: 0 auto;
-  padding-left: 40px;
-}
 
-.linked-in {
-  padding-left: 70px;
-}
+
+
 /******************************************
  ABOUT
  ******************************************/
