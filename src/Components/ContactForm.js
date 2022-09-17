@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useEffect,useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "../Styles/Contact.css"
-
+import "../Styles/Contact.css";
 
 export const ContactForm = () => {
+
+  
+ 
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,25 +29,28 @@ export const ContactForm = () => {
   };
 
   return (
-    
-      <div className="form-styles">
-        <form className="form" ref={form} onSubmit={sendEmail}>
-          <div className="form-group">
-            <label className="label">Your Name</label>
-            <input className="input" type="text" name="user_name" />
-          </div>
-          <div className="form-group">
-            <label className="label">Email</label>
-            <input className="input" type="email" name="user_email" />
-          </div>
-          <div className="form-group">
-            <label className="label">Message</label>
-            <textarea  className="text-area" name="message" />
-          </div>
+    <div className="form-styles">
+      <form className="form" ref={form} onSubmit={sendEmail}>
+        <div className="form-group">
+          <label className="label">Your Name</label>
+          <input className="input" type="text" name="user_name" />
+        </div>
+        <div className="form-group">
+          <label className="label">Email</label>
+          <input className="input" type="email" name="user_email" />
+        </div>
+        <div className="form-group">
+          <label className="label">Message</label>
+          <textarea className="text-area" name="message" />
+        </div>
 
-          <input className="send-button" type="submit" value="Send" />
-        </form>
-      </div>
-    
+        <input
+          className="send-button"
+          type="submit"
+          value="Send"
+        
+        />
+      </form>
+    </div>
   );
 };

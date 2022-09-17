@@ -12,6 +12,7 @@ import styled from "styled-components"
     .icon{
       color:black;
       background-color:var(--color-3);
+
       padding:1.3rem;
       align-items:center;
       justify-content:center;
@@ -19,6 +20,7 @@ import styled from "styled-components"
     }
     .text p{
       font-size:1.5rem;
+      font-family:var(--font-title)
     }
     svg{
       width:2rem;
