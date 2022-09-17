@@ -31,7 +31,7 @@ const NavMenuStyles = styled.div`
     a {
       display: inline-flex;
       
-      
+      font-family:var(--font-title);
       padding: 1rem 1rem;
       font-size: 1.5rem;
       color: black;

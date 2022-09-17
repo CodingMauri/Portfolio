@@ -47,9 +47,11 @@
     }
     
     .contact-heading h1{
+      font-family: var(--font-title);
       font-size:1.5rem;
       padding-bottom:10px;
     }
     .contact-heading h3{
+      font-family: var(--font-title);
       font-size:3rem;
     }

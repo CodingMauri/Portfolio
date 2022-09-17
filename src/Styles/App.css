@@ -124,8 +124,10 @@ body {
   
  .about-cntnr h2 {
   display: flex;
-  
+  font-family:var(--font-title);
+  font-size:2rem;
   justify-content: center;
+  text-shadow: 2px 2px 2px rgba(48, 45, 45, 0.25);
 }
 .abt-image-container img{
   display: flex;
@@ -229,6 +231,7 @@ body {
   justify-content: center;
  }
  .section-title h2{
+  font-family: var(--font-title);
   margin-top:1rem;
   font-size:4rem;
   padding:3rem;
