@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Projects from "./Components/Projects";
 import ContactSection from "./Components/ContactSection";
 import NavMenu from "./Components/NavMenu";
+import Resume from "./Components/Resume"
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -37,6 +38,11 @@ function App() {
             
             path="/contact"
             element={<ContactSection fadeLeft = {fadeLeft} />}
+          ></Route>
+          <Route
+            
+            path="/Resume"
+            element={<Resume fadeLeft = {fadeLeft} />}
           ></Route>
         </Routes>
     

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
 *{
   box-sizing: border-box;
   margin:0;
@@ -8,6 +11,8 @@
   --carousel-color: #f3e9dd;
   --color-2: #fdf6ec;
   --color-3: #8fc1d4;
+
+  --font-title :"Righteous","sans-serif";
   overflow-x: hidden;
   
 }
@@ -73,7 +78,8 @@ body {
   
 .hero-title {
   font-size: clamp(2rem, 6vw, 4rem);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  font-family:var(--font-title);
+  text-shadow: 2px 2px 2px rgba(48, 45, 45, 0.25);
   color:black;
 }
 #hero-title-cntnr {
