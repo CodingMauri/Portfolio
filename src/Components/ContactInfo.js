@@ -33,7 +33,7 @@ import styled from "styled-components"
       }
     }
     .text p{
-      font-size:15px;
+      font-size:13px;
     }
    
   `;

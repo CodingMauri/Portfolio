@@ -76,7 +76,7 @@ export default function ContactSection({fadeLeft}) {
             icon={<MdLocalPhone></MdLocalPhone>}
             text="(510)584-7366"
           />
-          <ContactInfo icon={<MdEmail />} text="mauricode24@gmail.com" />
+          <ContactInfo icon={<MdEmail />} text="alvarengamauricio7@gmail.com" />
           <ContactInfo />
         </div>
         <div className="right">
