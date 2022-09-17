@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Resume1 from "../assets/Resume1.png"
-import Resume2 from "../assets/Resume2.png"
+
 
 
 const ResumeContainer = styled.div`

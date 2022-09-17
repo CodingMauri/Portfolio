@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 
 export default function About() {
 
-  const [isInView,setIsInView] = useState(false)
   const fadeLeft = {
     hidden:{
       opacity:0,
@@ -24,10 +23,7 @@ export default function About() {
    
     <motion.div
     
-      whileInView= {() =>{
-        setIsInView(true)
-        return {}
-      }}
+      
     >
       <motion.div
         variants = {fadeLeft}
