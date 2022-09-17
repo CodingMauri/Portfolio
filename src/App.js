@@ -1,12 +1,12 @@
 import "./Styles/App.css";
-import { Route, Routes, useLocation } from "react-router";
+import { Route, Routes} from "react-router";
 import Home from "./Components/Home";
 
 import Projects from "./Components/Projects";
 import ContactSection from "./Components/ContactSection";
 import NavMenu from "./Components/NavMenu";
 import Resume from "./Components/Resume"
-import { AnimatePresence } from "framer-motion";
+
 
 function App() {
   const fadeLeft = {
