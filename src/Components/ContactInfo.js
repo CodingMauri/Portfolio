@@ -17,6 +17,9 @@ import styled from "styled-components"
       justify-content:center;
       border-radius:50%;
     }
+    .text p{
+      font-size:1.5rem;
+    }
     svg{
       width:2rem;
       height:2rem;
@@ -28,8 +31,9 @@ import styled from "styled-components"
       }
     }
     .text p{
-      font-size:20px;
+      font-size:15px;
     }
+   
   `;
 export default function ContactInfo({
   icon = <MdPlace />,

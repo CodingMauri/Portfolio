@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-
+import Project2 from "../assets/jupiterdeals2.png"
 
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
@@ -18,9 +18,9 @@ const Projects = ({fadeLeft}) => {
       name: "Jupiter-Deals",
       github: "https://github.com/Jupiter115/crispy-guide",
       website: "https://jupiterdeals.netlify.app/",
-      img: "https://user-images.githubusercontent.com/88520969/187346880-5be3bc45-97ba-4a06-b2df-1ea7a6bc15b5.png",
+      img: Project2,
       description:
-        "Affliate marketing app designed to display and promote a list of product deals to the audience. The audience may view the products, see a brief description, a link to the product, the price, an image of the product, and the name of the product. The admin of the site will have a separate login to edit, post, and delete products.",
+        "Affliate marketing app designed to display and promote a list of product deals to the audience.",
     },
   ];
 
