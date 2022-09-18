@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import SkillsCarousel from "./SkillsCarousel";
   const SkillSectionStyle = styled.div`
     width: 100vw;
-    min-height: 110vh;
+    max-height: 110vh;
     padding-top:4rem;
     h4 {
       font-size: 4rem;
@@ -18,6 +18,7 @@ import SkillsCarousel from "./SkillsCarousel";
       padding-top:2rem;
     }
     @media screen and (max-width:500px){
+      padding-top:10rem;
       
     }
   `;
