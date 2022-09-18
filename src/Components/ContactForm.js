@@ -5,7 +5,9 @@ import "../Styles/Contact.css";
 export const ContactForm = () => {
 
   
- 
+  const clicked = () => {
+    alert("Thank You! Your Email was sent!")
+  }
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -48,7 +50,7 @@ export const ContactForm = () => {
           className="send-button"
           type="submit"
           value="Send"
-        
+          onClick = {clicked}
         />
       </form>
     </div>
