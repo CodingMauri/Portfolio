@@ -1,7 +1,7 @@
 import React from "react";
 import {  Card, Button } from "react-bootstrap";
 import "../Styles/App.css";
-
+import { motion } from "framer-motion";
 export default function ProjectCard({
   name,
   img,
@@ -10,7 +10,9 @@ export default function ProjectCard({
   description,
 }) {
   return (
-    <div>
+    <motion.div
+    whileHover={{scale:1.2}}
+    >
       <Card.Img className="card-img" src={img} alt="project-pic" />
       <Card variant="top" className="project-card">
         <Card.Title className="project-title">
@@ -32,6 +34,6 @@ export default function ProjectCard({
           </a>
         </Card.Body>
       </Card>
-    </div>
+    </motion.div>
   );
 }
