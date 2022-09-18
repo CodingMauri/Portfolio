@@ -17,7 +17,11 @@ import SkillsCarousel from "./SkillsCarousel";
       justify-content:center;
       padding-top:2rem;
     }
+    @media screen and (max-width:500px){
+      
+    }
   `;
+  
   
 export default function SkillSection({fadeLeft}) {
   return (
