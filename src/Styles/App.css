@@ -75,9 +75,13 @@ body {
   }
   
  } */
-  
+.link-container {
+  display:flex;
+  justify-content: space-around;
+  margin:1rem;
+}
 .hero-title {
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
   font-family:var(--font-title);
   text-shadow: 2px 2px 2px rgba(48, 45, 45, 0.25);
   color:black;
@@ -93,21 +97,7 @@ body {
 
   
 }
-.link-container a {
-  display: inline-flex;
-  justify-content: space-around;
-  
-  height: 6.5vh;
-  width: 6.5vw;
-  padding: 15px;
-  margin: auto;
-  cursor: hover;
-  /* @media screen and (max-width:768px) {
-    height:2vh;
-    width: 4vw;
-    
-  } */
-}
+
 
 
 

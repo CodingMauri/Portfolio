@@ -1,7 +1,8 @@
 import React from "react";
 import "../Styles/App.css";
 import Typewriter from "typewriter-effect";
-
+import github from "../assets/github.svg"
+import linkedin from "../assets/linkedin.svg"
 import { motion } from "framer-motion";
 
 export default function Hero({fadeLeft}) {
@@ -55,11 +56,10 @@ export default function Hero({fadeLeft}) {
             <a href="https://github.com/CodingMauri">
               <motion.img
              whileHover={{ scale: 1.2 }}
-             onHoverStart={e => {}}
-             onHoverEnd={e => {}}
+             
               
-                className="github"
-                src={require("../assets/github-no-bg.png")}
+                
+                src={github}
                 alt="github"
               ></motion.img>
             </a>
@@ -68,8 +68,8 @@ export default function Hero({fadeLeft}) {
                whileHover={{ scale: 1.2 }}
                onHoverStart={e => {}}
                onHoverEnd={e => {}}
-                className="linked-in"
-                src={require("../assets/linked-in.jpeg")}
+                
+                src={linkedin}
                 alt="linked-in"
               ></motion.img>{" "}
             </a>
