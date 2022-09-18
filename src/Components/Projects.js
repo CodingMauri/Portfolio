@@ -12,7 +12,7 @@ const Projects = ({fadeLeft}) => {
       website: "https://retrodash.netlify.app/",
       img: "https://user-images.githubusercontent.com/88520969/187346880-5be3bc45-97ba-4a06-b2df-1ea7a6bc15b5.png",
       description:
-        "Infinite runner game built with Three.js for our game engine and using HTML and CSS for our UI UI. We also incorporated Blender for our space ship model.",
+        "Infinite runner game built with Three.js for our game engine and using HTML and CSS for our UI. We also incorporated Blender for our space ship model.",
     },
     {
       name: "Jupiter-Deals",
