@@ -7,6 +7,7 @@ import SkillsCarousel from "./SkillsCarousel";
     width: 100vw;
     max-height: 110vh;
     padding-top:4rem;
+    height:100%;
     h4 {
       font-size: 4rem;
       font-family: var(--font-title);
