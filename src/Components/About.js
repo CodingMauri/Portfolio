@@ -38,14 +38,8 @@ export default function About() {
           </div>
           <p>
             Hi my name is Mauricio Alvarenga and I am a software engineer
-            based in the bay area. My desired coding language is JavaScript
-            since thats what I'm most comfortable with and I have used that
-            language to code the majority of my projects. I have over 500 hours
-            of coding experience under my belt and I have used my experience to
-            build applications that I love. For example, RetroDash an infinite
-            runner videogame built with three.js HTML and CSS. I'm a big gamer
-            so being able to develop my own game with other people who also
-            shared the same passion was an awesome experience.
+            based in the Bay Area. I am a huge fan of JavaScript and have enjoyed using it ever since I was introduced to it. I love coding and  
+            building applications that I love. I'm a big gamer and naturally I have dabbled in making some games of my own and loved the developing experience. I love seeing my creative work come to life with developing.
           </p>
         </section>
       </motion.div>
