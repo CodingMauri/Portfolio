@@ -33,17 +33,10 @@ export default function About() {
             ></img>
           </div>
           <p>
-<<<<<<< HEAD
             Hi my name is Mauricio Alvarenga and I am a software engineer
             based in the Bay Area. I am a huge fan of JavaScript and have enjoyed using it ever since I was introduced to it. I love coding and  
             building applications that I love. I'm a big gamer and naturally I have dabbled in making some games of my own and loved the developing experience. I love seeing my creative work come to life with developing.
-=======
-            Hi my name is Mauricio Alvarenga and I am a software engineer based
-            in the bay area. My desired coding language is JavaScript since
-            thats what I'm most comfortable with and I have used that language
-            to code the majority of my projects. I love coding and building
-            applications that I love. 
->>>>>>> 36bd6ed38d7cb8a114cb9d9219d349b5c6926481
+
           </p>
         </section>
       </motion.div>
