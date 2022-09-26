@@ -11,6 +11,7 @@ import jslogo from "../assets/skillLogos/js-logo.svg";
 import reactlogo from "../assets/skillLogos/react-2.svg";
 import mongologo from "../assets/skillLogos/mongodb.svg";
 import nodeLogo from "../assets/skillLogos/nodejs-icon.svg"
+import python from "../assets/skillLogos/python.svg"
 const CarouselContainer = styled.div`
   padding:2rem;
   margin:2rem;
@@ -74,6 +75,11 @@ export default function SkillsCarousel() {
     {
         name: "NodeJS",
         image: nodeLogo,
+    },
+    {
+      name: "Python",
+      image: python
+
     }
   ];
   return (
