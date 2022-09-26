@@ -28,7 +28,7 @@ const CarouselContainer = styled.div`
 export default function SkillsCarousel() {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
