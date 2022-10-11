@@ -22,6 +22,13 @@ const Projects = ({fadeLeft}) => {
       description:
         "Affliate marketing app designed to display and promote a list of product deals to the audience.",
     },
+    {
+      name: "AlbumZ",
+      github: "https://github.com/CodingMauri/album-gallery",
+      website:"https://6344bc11baf6a622ee43853a--albumzgallery.netlify.app/",
+      img:"https://user-images.githubusercontent.com/106369465/194974072-1707f8d6-e446-4406-a602-41b203d22306.png",
+      description:"React App using data from Last.FM API to show users albums along with the information about them."
+    }
   ];
 
   return (
