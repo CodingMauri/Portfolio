@@ -34,9 +34,7 @@ export default function About() {
           </div>
           <p>
             Hi my name is Mauricio Alvarenga and I am a software engineer based
-            in the bay area. My desired coding language is JavaScript since
-            thats what I'm most comfortable with and I have used that language
-            to code the majority of my projects. I love coding and building
+            in the bay area. I am a huge fan of React and have enjoyed it ever since I was introduced to it.I love coding and building
             applications that I love. I am also a big gamer, so taking a peek
             into the developing world and using my skills to create some games
             and application of my own is amazing.
