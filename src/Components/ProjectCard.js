@@ -8,7 +8,9 @@ export default function ProjectCard({
   github,
   website,
   description,
-}) {
+})
+{
+  
   return (
     <motion.div
     whileHover={{scale:1.2}}
@@ -22,16 +24,21 @@ export default function ProjectCard({
           <p>{description}</p>
         </Card.Body>
         <Card.Body className="button-cntnr">
-          <a href={github}>
+          <motion.a href={github}
+          whileHover = {{scale:1.2}}
+          transition = {{duration:0.2}}>
             <Button id="github" className="project-btns" variant="contained">
+           
               Github
             </Button>
-          </a>
-          <a href={website}>
+          </motion.a>
+          <motion.a href={website}
+          whileHover = {{scale:1.2}}
+          transition = {{duration:0.2}}>
             <Button id="live" className="project-btns" variant="contained">
               Live
             </Button>
-          </a>
+          </motion.a>
         </Card.Body>
       </Card>
     </motion.div>

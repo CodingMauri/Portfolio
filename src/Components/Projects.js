@@ -25,7 +25,7 @@ const Projects = ({fadeLeft}) => {
     {
       name: "AlbumZ",
       github: "https://github.com/CodingMauri/album-gallery",
-      website:"https://6344bc11baf6a622ee43853a--albumzgallery.netlify.app/",
+      website:"https://albumzgallery.netlify.app/",
       img:"https://user-images.githubusercontent.com/106369465/194974072-1707f8d6-e446-4406-a602-41b203d22306.png",
       description:"React App using data from Last.FM API to show users albums along with the information about them."
     }

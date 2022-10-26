@@ -246,8 +246,9 @@ body {
 }
 .button-cntnr{
   display: inline-flex;
-  margin-top:1em;
-  
+  justify-content: space-around;
+  align-items:left;
+  margin-top:1rem;
   
   
 
@@ -268,7 +269,8 @@ button.project-btns{
   width:100%;
   margin:10px;
   cursor:hover;
-
+  font-family: var(--font-title);
+  font-weight: 400;
 }
 #live{
   background-color:var(--color-3);
