@@ -1,15 +1,31 @@
-import React from "react";
-
 import { FaLinkedin } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  const slide = {
+    initial: {
+      x: 1300,
+      opacity: 0,
+    },
+    animate: {
+      x: 1200,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        transition: { type: "spring", stiffness: 200, damping: 500 },
+      },
+    },
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  const [sent, setSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,7 +47,8 @@ const Contact = () => {
       )
       .then((res) => {
         console.log("email sent successfully", res.status);
-        alert("Email sent successfully");
+        setSent(true);
+        setTimeout(() => setSent(false), 3000);
       })
       .catch((err) => {
         console.log(err);
@@ -39,6 +56,20 @@ const Contact = () => {
   };
   return (
     <div className="w-full h-svh bg-primary flex flex-col md:flex-row   ">
+      {sent && (
+        <motion.div
+          variants={slide}
+          initial="initial"
+          animate="animate"
+          exit="initial"
+          transition={{ duration: 2.5 }}
+          className="absolute w-[110px] m-10 h-[50px] bg-secondary rounded-lg font-varena text-white p-2"
+        >
+          {" "}
+          Email Sent !{" "}
+        </motion.div>
+      )}
+
       <div className="md:w-1/3 w-full flex  flex-col items-center justify-center h-full bg-secondary p-10">
         <h1 className="font-sora font-bold text-primary text-5xl">
           Get in Touch
@@ -47,7 +78,11 @@ const Contact = () => {
           alvarengamauricio7@gmail.com <br></br>
           feel free to reach out through my socials!
         </p>
-        <a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.linkedin.com/in/mauricioalvarenga/"
+        >
           <FaLinkedin className="w-full h-10 text-primary flex mt-10 cursor-pointer hover:scale-125 duration-300 transition-al" />
         </a>
       </div>

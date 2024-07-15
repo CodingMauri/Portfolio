@@ -1,5 +1,4 @@
-import { React} from "react";
-
+/* eslint-disable react/prop-types */
  const ProjectCard = ({ project, index ,mobile}) => {
 
 
@@ -19,16 +18,16 @@ import { React} from "react";
         <h1 className="text-2xl h-[50px] font-sora font-bold border-b-2 border-b-secondary mb-6">
           {project.project}
         </h1>
-        <p>
-          {project.description.length > (mobile ? 330:500)
-            ? project.description.slice(0, mobile ? 330:500) + "..."
+        <p className = "text-sm font-varena leading-normal">
+          {project.description.length > (mobile ? 330:250)
+            ? project.description.slice(0, mobile ? 330:250) + "..."
             : project.description}{" "}
         </p>
-        <div className="w-full flex items-center gap-10 h-[100px] pt-1 ">
-          <a className="w-[150px] h-[50px]  rounded-full bg-secondary text-primary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
+        <div className="w-full flex items-center gap-10 h-[100px]  ">
+          <a className=" m-1 w-[130px] h-[45px]  rounded-full bg-secondary text-primary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
             Github
           </a>
-          <a className="w-[150px] h-[50px]  rounded-full bg-primary border-2 border-secondary text-secondary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
+          <a className=" m-1 w-[130px] h-[45px]  rounded-full bg-primary border-2 border-secondary text-secondary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
             Live
           </a>
         </div> 

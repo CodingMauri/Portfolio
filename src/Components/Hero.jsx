@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import profile from "../assets/images/profile.jpg";
 import Typewriter from "typewriter-effect";
 import {motion} from "framer-motion"
