@@ -3,7 +3,7 @@
 import ProjectCard from "./ProjectCard"
 import art from "../assets/images/art.jpg";
 import art2 from "../assets/images/art2.jpg";
-
+import retrodash from "../assets/images/retrodash.png"
 import art3 from "../assets/images/art3.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -47,10 +47,13 @@ const Project = ({mobile}) => {
       img: art2,
     },
     {
-      project: "Anonymous",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor eu fugiat nulla pariatur.",
-      img: art3,
+      project: "RetroDash",
+      description: `Built an infinite runner game using HTML, CSS, JavaScript, and Three.js, incorporating 3D modeling with Blender.
+      Designed the game architecture using object-oriented programming for scalable and maintainable code.
+      `,
+      img: retrodash,
+      github:"https://github.com/runner-runner224/runner-react/tree/main/src/components",
+      link:"https://retrodash.netlify.app/",
     },
   ];
   return (

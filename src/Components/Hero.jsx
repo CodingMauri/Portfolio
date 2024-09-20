@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import profile from "../assets/images/profile.jpg";
+import profile from "../assets/images/profile.webp";
 import Typewriter from "typewriter-effect";
 import {motion} from "framer-motion"
 const Hero = () => {

@@ -86,10 +86,10 @@ const Contact = () => {
           <FaLinkedin className="w-full h-10 text-primary flex mt-10 cursor-pointer hover:scale-125 duration-300 transition-al" />
         </a>
       </div>
-      <div className="w-full h-full flex items-center justify-center ">
+      <div className="w-full h-full flex items-center justify-center b ">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col items-center  w-4/5 "
+          className="flex flex-col items-center  w-4/5 bg-primary"
         >
           <div className="flex flex-col w-full lg:w-2/3 h-full p-2">
             <label

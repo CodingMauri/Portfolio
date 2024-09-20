@@ -7,7 +7,7 @@
       className="flex flex-col w-[85%] h-svh overflow-hidden border-2 border-secondary m-10 hover:scale-105 transition-all duration-500"
       key={index}
     >
-      <div className="w-full max-h-[300px] md:max-h-[350px] lg:max-h-[500px]  bg-red-500">
+      <div className="w-full max-h-[300px] md:max-h-[350px] lg:min-h-[500px]  bg-red-500">
         <img
           className="w-full h-full object-cover"
           src={project.img}
