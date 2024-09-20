@@ -2,9 +2,8 @@
 /* eslint-disable react/jsx-key */
 import ProjectCard from "./ProjectCard"
 import art from "../assets/images/art.jpg";
-import art2 from "../assets/images/art2.jpg";
+import vfw from "../assets/images/vfw.png"
 import retrodash from "../assets/images/retrodash.png"
-import art3 from "../assets/images/art3.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -41,10 +40,10 @@ const Project = ({mobile}) => {
       img: art,
     },
     {
-      project: "Anonymous",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      img: art2,
+      project: "Website for VFW",
+      description: "I developed a website for a local Veterans of Foreign Wars (VFW) post, working directly with the client to understand and meet their specific needs. The site was supposed to serve as an online hub for the veterans’ community, providing information, event updates, and resources. I implemented a responsive design and ensured the platform was easy to navigate, meeting both the client’s and users’ expectations.",
+      img: vfw,
+      github: "https://github.com/CodingMauri/vfwSite"
     },
     {
       project: "RetroDash",

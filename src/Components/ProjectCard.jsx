@@ -27,9 +27,11 @@
           <a className=" m-1 w-[130px] h-[40px]  rounded-full bg-secondary text-primary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
             Github
           </a>
+          {project.link &&
           <a className=" m-1 w-[130px] h-[40px]  rounded-full bg-primary border-2 border-secondary text-secondary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
             Live
           </a>
+          }
         </div> 
       </div>
     </div>
