@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
  const ProjectCard = ({ project, index ,mobile}) => {
 
-
+  console.log(project.github)
   return (
     <div
       className="flex flex-col w-[85%] h-svh overflow-hidden border-2 border-secondary m-10 hover:scale-105 transition-all duration-500"
@@ -24,11 +24,11 @@
             : project.description}{" "}
         </p>
         <div className="w-full flex items-center gap-10 h-[100px]  ">
-          <a className=" m-1 w-[130px] h-[40px]  rounded-full bg-secondary text-primary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
+          <a href = {project.github} className=" m-1 w-[130px] h-[40px]  rounded-full bg-secondary text-primary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
             Github
           </a>
           {project.link &&
-          <a className=" m-1 w-[130px] h-[40px]  rounded-full bg-primary border-2 border-secondary text-secondary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
+          <a href = {project.link} className=" m-1 w-[130px] h-[40px]  rounded-full bg-primary border-2 border-secondary text-secondary flex items-center justify-center  font-sora text-lg hover:scale-110 cursor-pointer transition-all ">
             Live
           </a>
           }
